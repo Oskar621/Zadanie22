@@ -6,17 +6,29 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <TextView
+        android:id="@+id/dospr2"
+        android:layout_width="88dp"
+        android:layout_height="39dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.458"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.891"
+        tools:visibility="invisible" />
+
     <com.google.android.material.textfield.TextInputEditText
         android:id="@+id/podane_nazwisko"
-        android:layout_width="403dp"
-        android:layout_height="48dp"
+        android:layout_width="348dp"
+        android:layout_height="68dp"
         android:hint="Podaj nazwisko"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.395" />
+        app:layout_constraintVertical_bias="0.407" />
 
     <TextView
         android:id="@+id/imie1"
@@ -34,26 +46,27 @@
 
     <com.google.android.material.textfield.TextInputEditText
         android:id="@+id/podane_imie"
-        android:layout_width="403dp"
-        android:layout_height="48dp"
+        android:layout_width="358dp"
+        android:layout_height="70dp"
         android:hint="Podaj imie"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.49"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.301" />
+        app:layout_constraintVertical_bias="0.276" />
 
     <Button
         android:id="@+id/wyslij"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Wyślij"
+        android:text="OK"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.459"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.499" />
+        app:layout_constraintVertical_bias="0.537" />
 
     <TextView
         android:id="@+id/Wynik"
@@ -66,5 +79,18 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.739" />
+
+    <TextView
+        android:id="@+id/dospr"
+        android:layout_width="88dp"
+        android:layout_height="39dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.811"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.891"
+        tools:visibility="invisible" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
