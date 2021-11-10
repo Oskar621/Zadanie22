@@ -23,15 +23,18 @@ class MainActivity : AppCompatActivity() {
         wyslane.setOnClickListener {
             dospr.text = do_podania_imie.text.toString()
             dospr2.text = do_podania_nazwisko.text.toString()
-            if ( (dospr.text != "")  || (dospr2.text != ""))
+            if (dospr.text == "")
+            {
+                tekst_wynik.text = "Wypełnij wszystkie pola"
+            }
+            else if (dospr2.text == "") {
+                tekst_wynik.text = "Wypełnij wszystkie pola"
+            }
+            else
             {
                 val podane_imie = do_podania_imie.text.toString()
                 val podane_nazwisko = do_podania_nazwisko.text.toString()
                 tekst_wynik.text = "Podane Imie: " + podane_imie + "   Podane Nazwisko: " + podane_nazwisko
-            }
-            else {
-
-                tekst_wynik.text = "Wypełnij wszystkie pola"
             }
         }
     }
