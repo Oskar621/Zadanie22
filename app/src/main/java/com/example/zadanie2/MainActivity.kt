@@ -31,7 +31,7 @@ class MainActivity : AppCompatActivity() {
             }
             else {
 
-                tekst_wynik.text = "Wypełnij wszystkie pola"
+                tekst_wynik.text = "Wypełnij wszystkie pola";
             }
         }
     }
